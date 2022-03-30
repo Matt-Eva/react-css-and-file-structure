@@ -9,7 +9,7 @@
  
  ## File Structure 
  
- ## Components and Pages
+ ### Components and Pages
  
 If you've worked with React in any capacity, you're likely familiar with the idea of "components". Components are what make React so powerful - they allow you to separate different portions of your webpage into reusable code files, which can be use across your website. Components help ensure DRY code (Don't Repeat Yourself) and make it easier to organize and separate different pieces of website functionality. 
  

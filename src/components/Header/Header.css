@@ -1,0 +1,15 @@
+.header{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    background-color: hsl(100, 50%, 50%);
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-row: 10vh;
+    align-items: center;
+}
+
+.header__title{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self:center;
+}

@@ -1,8 +1,9 @@
 import React from 'react'
-import "./Content.css"
+import "./ContentBox.css"
 import ContentCard from './ContentCard'
 
-function Content() {
+
+function ContentBox() {
   return (
     <div className="content">
 
@@ -10,4 +11,4 @@ function Content() {
   )
 }
 
-export default Content
+export default ContentBox

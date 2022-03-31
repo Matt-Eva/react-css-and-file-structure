@@ -1,5 +1,5 @@
 .home {
     display: grid;
-    grid-template-rows: 10vh 90vh;
-    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 50px calc(100vh - 50px);
+    grid-template-columns: 200px calc(100vw - 200px);
 }

@@ -23,6 +23,6 @@ This also gives us a clear component hierarchy. App is imported into index, page
 
 ### Nested Folders
 
-
+In general, you'll want to avoid excessive nesting of folders in your React app. Nesting things too deeply can make tracking down and importing files a pain. However, a certain amount of nesting can be really helpful for organizing. Just know that if you're nesting more than 
 
 

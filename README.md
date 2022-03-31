@@ -43,4 +43,6 @@ When using plain CSS in React, the general convention is to create a separate CS
 
 ### Specificity and Hierarchy
  
+The rules of CSS specificity and Hierarchy still apply. That means that the styles of parent compenents will have a role in determining the styles of child components. This is great news, especially if you're trying to implement a grid or flexbox to define your layout, but it does mean you're going to need to keep track of styling effects across multiple files. This is really not so bad, especially when the alternative involves endless back and forth scrolling, but it's something to keep in mind if you're getting weird behavior when adjusting the styles for a specific component (maybe it's parent element has specific styles that you've forgotten about).
+ 
  

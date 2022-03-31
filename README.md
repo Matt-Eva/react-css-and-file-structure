@@ -45,4 +45,8 @@ When using plain CSS in React, the general convention is to create a separate CS
  
 The rules of CSS specificity and Hierarchy still apply. That means that the styles of parent compenents will have a role in determining the styles of child components. This is great news, especially if you're trying to implement a grid or flexbox to define your layout, but it does mean you're going to need to keep track of styling effects across multiple files. This is really not so bad, especially when the alternative involves endless back and forth scrolling, but it's something to keep in mind if you're getting weird behavior when adjusting the styles for a specific component (maybe it's parent element has specific styles that you've forgotten about).
  
+ ### The BEM Technique
  
+Typically, we'll want to use classes to select our specific elements within React, rather than ids. Why? Well, let's imagine that we're rendering the same component multiple times within a page. If we set Ids on any of our elements within that component, our DOM would have multiple elements with the same Id, which is a problem - Ids are designed to be unique.
+ 
+So, instead, React developers will opt for using classnames as selectors. That way, multiple component renders won't cause any issues. However, this presents another problem.

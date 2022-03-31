@@ -1,9 +1,9 @@
 # React File Structure and CSS
  
 
- This app provides an example of React file structure, including the structure and use of plain CSS files.
+This app provides an example of React file structure, including the structure and use of plain CSS files. This app employs the BEM technique for classnames.
 
- There are many acceptable and logical ways to structure a React app - this is just one method / technique.
+There are many acceptable and logical ways to structure a React app - this is just one method / technique.
 
 The most important aspect of file structure is consistency. If you find a preferred method, be sure to use that throughout your file structure.
 

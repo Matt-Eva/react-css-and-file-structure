@@ -39,7 +39,7 @@ There are a few different convetions for including CSS files in your React appli
 
 ### CSS by component
 
-When using plain CSS in React, the general convention is to create a separate CSS file for each component in your application, which you then import at the top of your component. This method helps maintain the modular design that makes React so useful, and allows you to neatly synchronize your styling structure to match your component structure. It makes it easier to reference and manipulate styles for a specific component, since the styles included in the corresponding CSS file are for that component only (no more scrolling through massive CSS files looking for the right selector for that one specific <h1> tag).
+When using plain CSS in React, the general convention is to create a separate CSS file for each component in your application, which you then import at the top of your component. This method helps maintain the modular design that makes React so useful, and allows you to neatly synchronize your styling structure to match your component structure. It makes it easier to reference and manipulate styles for a specific component, since the styles included in the corresponding CSS file are for that component only (no more scrolling through massive CSS files looking for the right selector for that one specific h1 tag).
 
 ### Specificity and Hierarchy
  

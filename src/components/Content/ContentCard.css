@@ -26,3 +26,9 @@
 .content-card__header--green {
     color: hsl(120, 50%, 50%);
 }
+
+.content-card__button-container {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}

@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Header.css"
+import Button from "react-bootstrap/Button"
 
 function Header() {
   return (
     <div className="header">
         <h1 className="header__title">Title</h1>
+        <button className="header__toggle-modal-btn">Toggle Modal</button>
     </div>
   )
 }

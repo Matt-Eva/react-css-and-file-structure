@@ -49,4 +49,14 @@ The rules of CSS specificity and Hierarchy still apply. That means that the styl
  
 Typically, we'll want to use classes to select our specific elements within React, rather than ids. Why? Well, let's imagine that we're rendering the same component multiple times within a page. If we set Ids on any of our elements within that component, our DOM would have multiple elements with the same Id, which is a problem - Ids are designed to be unique.
  
-So, instead, React developers will opt for using classnames as selectors. That way, multiple component renders won't cause any issues. However, this presents another problem.
+So, instead, React developers will opt for using classnames as selectors. That way, multiple component renders won't cause any issues. However, this presents another problem. Classnames can be used across elements - that's why we're opting to use them instead of Ids. But what if we accidentally use the same classname twice within our app, on two entirely different components? That could cause some major problems.
+
+This is where the BEM technique demonstrates its worth. BEM stands for "Block, Element, Modifier", and refers to a specific method for using classes. The "Block" level refers to the parent element you're exporting from your component (most likely a div). Since React components can only return one html element (along with whatever child elements you've defined inside of it), we'll be placing our "Block" classname on that component. Furthermore, since all components should have unique names, the classname for that parent component will simply be the name of the component itself. For example, the Block level element in our component ContentCard will be given a classname of "content-card". Since no other components will have the same name as ContentCard, and all Block level classnames will have the same name as the component they're being created in, this ensures that each Block level classname will be unique.
+
+Next, we have our "Element" level. This refers to the child elements of our block level element. For example, our ContentCard has an h2 element inside of its block level div element. Let's say we want to give this h2 header a simple classname of "header." Flat our giving it the classname "header" wouldn't work, as we probably have many headers throughout our application. So, we're going to preface "header" with our Block level classname followed by two underscores. Aka, the classname for our h2 header will be "content-card__header".
+
+Because our block level classname will be unique, prefacing the classnames of all of its child elements with the block level classname will ensure that each of the child elements have a unique classname. That way we can use more generic labels to describe them (such as "header") without running the risk of duplicating classnames across our application. Pretty smart!
+
+
+
+More about BEM: https://css-tricks.com/bem-101/

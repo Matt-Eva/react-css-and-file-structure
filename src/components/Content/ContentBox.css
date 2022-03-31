@@ -1,7 +1,17 @@
-.content {
+.content-box{
     grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 2;
     background-color: hsl(90, 70%, 90%);
+
     display: flex;
-    
+    flex-flow: row wrap;
+    justify-content: center;
+
+    overflow: auto;
+}
+
+@media (min-width: 600px){
+    .content-box {
+        grid-column: 2 / span 1;
+    }
 }

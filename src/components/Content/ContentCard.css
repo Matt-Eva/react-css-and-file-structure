@@ -1,0 +1,28 @@
+.content-card {
+    display: grid;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border: solid;
+    margin: 10px;
+    color: black;
+    transition: 500ms;
+}
+
+.content-card:hover{
+    background-color: hsl(120, 50%, 20%);
+    color: white;
+    transition: 500ms;
+}
+
+.content-card--blue {
+    background-color: hsl(200, 100%, 90%);
+}
+
+.content-card__header {
+    text-align: center;
+}
+
+.content-card__header--green {
+    color: hsl(120, 50%, 50%);
+}

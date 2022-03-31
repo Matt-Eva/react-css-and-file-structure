@@ -5,7 +5,9 @@
 
  There are many acceptable and logical ways to structure a React app - this is just one method / technique.
 
- The most important aspect of file structure is consistency. If you find a preferred method, be sure to use that throughout your file structure.
+The most important aspect of file structure is consistency. If you find a preferred method, be sure to use that throughout your file structure.
+
+I'd recommend forking, cloning, and opening this app while reading through the README. You can reference the code in our files as examples of the concepts discussed in this README.
  
  ## File Structure 
  
@@ -57,6 +59,8 @@ Next, we have our "Element" level. This refers to the child elements of our bloc
 
 Because our block level classname will be unique, prefacing the classnames of all of its child elements with the block level classname will ensure that each of the child elements have a unique classname. That way we can use more generic labels to describe them (such as "header") without running the risk of duplicating classnames across our application. Pretty smart!
 
-
+But what if we want to conditionally modify our Block level element or specific child level elements? That's where the "Modifier" technique comes in. Basically, you use the classname of whichever element whose styles you want to modify - "content-card", perhaps, or "content-card__header" - and append "--<modifier-descriptor>". (<modifier-descriptor> is a stand in for what ever descriptor you want to use to describe how your modifying your class). So, if we wanted to give our content-card class a blue background, we could make a class called "content-card--blue". And if we wanted to change the font of our header class, we could write "content-card__header--new-font."
+ 
+The downside of this technique is that you can end up with some pretty long classnames. But, it's worth it to preserve the consistency and functionality of your program as a whole.
 
 More about BEM: https://css-tricks.com/bem-101/

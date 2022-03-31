@@ -23,6 +23,16 @@ This also gives us a clear component hierarchy. App is imported into index, page
 
 ### Nested Folders
 
-In general, you'll want to avoid excessive nesting of folders in your React app. Nesting things too deeply can make tracking down and importing files a pain. However, a certain amount of nesting can be really helpful for organizing. Just know that if you're nesting more than 
+In general, you'll want to avoid excessive nesting of folders in your React app. Nesting things too deeply can make tracking down and importing files a pain. However, a certain amount of nesting can be really helpful for organizing. Just know that if you're nesting more than 3 levels deep, you're probably starting to incorporate too much nesting.
+
+It is helpful to implement nesting for specific pages and components within your "pages" and "components" folders. If you check out the file structure for this application, you'll see that "Home" and "About" both have their own folders within the "pages" folder. In each folder are the corresponding JS and CSS files.  
+
+A similar strategy has been employed with components. However, you'll notice that the "Content" folder has more than one component file and more than one CSS file inside of it. We've grouped them together because our "ContentCard" component will be a child of our "ContentBox" component. It's often helpful to group similar components together in this manner. If you have a number of form components, for instance, it could be helpful to group them all within a folder called "Forms". The same could be true of different NavBar components, like the NavBar container component itself, User Profile components, or other navigational components that will appear in NavBar. There is not strict rule as to how you should group similar components - as before, consistency is the most important feature. 
+
+Notice that parent components are not always worthy of being treated as "pages". ContentBox, for example, is a parent component to ContentCard (it serves as ContentCard's container), but it's still only meant to take up a portion of an overall page. The status of "page" is reserved for components that will serve as containers for an entire webpage.
+
+### Including CSS Files
+
+
 
 

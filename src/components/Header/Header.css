@@ -4,7 +4,7 @@
     background-color: hsl(100, 50%, 50%);
     display: grid;
     grid-template-columns: 25vw 50vw 25vw;
-    grid-row: 10vh;
+    grid-template-rows: 50px;
     align-items: center;
 }
 
@@ -18,6 +18,7 @@
 
 .header__toggle-modal-btn {
     grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
     justify-self: right;
     background-color: hsl(150, 80%, 27%);
     color: white;

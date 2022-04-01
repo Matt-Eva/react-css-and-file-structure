@@ -12,6 +12,7 @@
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     justify-self: center;
+    font-size: 35px;
     margin: 0;
 }
 

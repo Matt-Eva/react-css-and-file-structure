@@ -12,6 +12,28 @@ function ContentBox() {
       <ContentCard />
       <ContentCard />
       <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard isBlue={true}/>
+      <ContentCard />
+      <ContentCard />
+      <ContentCard isBlue={true}/>
+      <ContentCard />
+      <ContentCard isBlue={true}/>
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
     </div>
   )
 }

@@ -1,0 +1,7 @@
+.toggle-sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: left;
+    margin-left: 10px;
+    background-color: blue;
+}

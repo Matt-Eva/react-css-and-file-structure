@@ -36,4 +36,7 @@
     .header {
         grid-template-columns: 20vw 60vw 20vw;
     }
+    .header__toggle-sidebar-box {
+        display: hidden;
+    }
 }

@@ -1,5 +1,5 @@
 .sidebar{
-    display: hidden;
+    display: none;
 }
 
 @media (min-width: 600px){

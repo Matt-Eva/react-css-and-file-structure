@@ -6,6 +6,7 @@ import Offcanvas from "react-bootstrap/Offcanvas"
 import Button from "react-bootstrap/Button"
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
+import "./ToggleSidebar.css"
 
 function ToggleSidebar() {
   return (

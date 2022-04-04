@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button"
 import ToggleSidebarBootstrap from './ToggleSidebarBootstrap'
 import ToggleSidebar from "./ToggleSidebar"
 
-function Header({toggleBootstrapModal}) {
+function Header({toggleBootstrapModal, toggleSidebar}) {
   return (
     <div className="header">
         <h1 className="header__title">Title</h1>
@@ -13,7 +13,7 @@ function Header({toggleBootstrapModal}) {
           <button className="header__toggle-modal-btn" onClick={toggleBootstrapModal}>Toggle Modal</button>
         </div>
         <div className="header__menu-box">
-          <ToggleSidebar />
+          <ToggleSidebar toggleSidebar={toggleSidebar} />
           <ToggleSidebarBootstrap />
         </div>
     </div>

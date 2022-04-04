@@ -9,14 +9,14 @@ import ExampleModal from '../../components/Header/ExampleModal'
 function Home() {
   const [showModal, setShowModal] = useState(false)
 
-  function toggleModal(){
+  function toggleBootstrapModal(){
     setShowModal(!showModal)
   }
 
   return (
     <div className="home">
-        <ExampleModal showModal={showModal} toggleModal={toggleModal}/>
-        <Header toggleModal={toggleModal}/>
+        <ExampleModal showModal={showModal} toggleModal={toggleBootstrapModal}/>
+        <Header toggleBootstrapModal={toggleBootstrapModal}/>
         <Sidebar />
         <ContentBox />
     </div>

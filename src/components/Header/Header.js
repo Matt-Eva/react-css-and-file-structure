@@ -1,14 +1,21 @@
 import React from 'react'
 import "./Header.css"
 import Button from "react-bootstrap/Button"
-import ToggleSidebar from './ToggleSidebar'
+import ToggleSidebarBootstrap from './ToggleSidebarBootstrap'
+import ToggleSidebar from "./ToggleSidebar"
 
-function Header({toggleModal}) {
+function Header({toggleBootstrapModal, toggleSidebar}) {
   return (
     <div className="header">
         <h1 className="header__title">Title</h1>
-        <button className="header__toggle-modal-btn" onClick={toggleModal}>Toggle Modal</button>
-        <ToggleSidebar />
+        <div className="header__btn-box">
+          <button className="header__toggle-modal-btn" onClick={toggleBootstrapModal}>Toggle Bootstrap Modal</button>
+          <button className="header__toggle-modal-btn" onClick={toggleBootstrapModal}>Toggle Modal</button>
+        </div>
+        <div className="header__menu-box">
+          <ToggleSidebar toggleSidebar={toggleSidebar} />
+          <ToggleSidebarBootstrap />
+        </div>
     </div>
   )
 }

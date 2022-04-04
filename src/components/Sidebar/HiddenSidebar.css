@@ -1,0 +1,23 @@
+.hidden-sidebar{
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 200px calc(100vw - 200px);
+    grid-template-rows: 100vh;
+    z-index: 1;
+}
+
+.hidden-sidebar__sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-color: white;
+
+}
+
+.hidden-sidebar__click-away {
+    background-color: rgba(50, 50, 50, 0.3)
+}

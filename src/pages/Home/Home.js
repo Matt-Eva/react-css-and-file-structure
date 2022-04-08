@@ -7,23 +7,13 @@ import HiddenSidebar from '../../components/Sidebar/HiddenSidebar'
 import Modal from '../../components/Header/Modal'
 
 
-function Home() {
-  const [showModal, setShowModal] = useState(false)
-  const [showSidebar, setShowSidebar] = useState(false)
-
-  function toggleModal(){
-    setShowModal(!showModal)
-  }
-
-  function toggleSidebar(){
-    setShowSidebar(!showSidebar)
-  }
+function Home(/*{showModal, toggleModal, showSidebar, toggleSidebar}*/) {
 
   return (
     <div className="home">
-      <HiddenSidebar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
-      <Modal showModal={showModal} toggleModal={toggleModal}/>
-      <Header toggleSidebar={toggleSidebar} toggleModal={toggleModal}/>
+      {/* <HiddenSidebar toggleSidebar={toggleSidebar} showSidebar={showSidebar} /> */}
+      <Modal /*showModal={showModal} toggleModal={toggleModal}*//>
+      <Header /*toggleSidebar={toggleSidebar} toggleModal={toggleModal}*//>
       <Sidebar />
       <ContentBox />
     </div>

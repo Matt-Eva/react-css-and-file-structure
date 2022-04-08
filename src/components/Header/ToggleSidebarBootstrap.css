@@ -1,9 +1,0 @@
-.toggle-sidebar-bootstrap {
-    justify-self: left;
-}
-
-@media (min-width: 600px){
-    .toggle-sidebar-bootstrap {
-        display: none;
-    }
-}

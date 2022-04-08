@@ -1,9 +1,12 @@
 import React from 'react'
 import "./HiddenSidebar.css"
 
-function HiddenSidebar({ toggleSidebar}) {
+function HiddenSidebar({ toggleSidebar, showSidebar}) {
+
+  const sidebarClass = showSidebar ? "hidden-sidebar": "hidden-sidebar--no-display";
+
   return (
-    <div className="hidden-sidebar">
+    <div className={sidebarClass}>
         <div className="hidden-sidebar__sidebar">
             <ul>
                 <li>Option</li>

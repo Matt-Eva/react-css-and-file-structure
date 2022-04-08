@@ -1,4 +1,6 @@
 .toggle-sidebar {
+    grid-row: 1;
+    grid-column: 1;
     display: flex;
     flex-flow: row wrap;
     align-items: center;

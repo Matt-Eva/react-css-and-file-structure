@@ -64,3 +64,9 @@ But what if we want to conditionally modify our Block level element or specific 
 The downside of this technique is that you can end up with some pretty long classnames. But, it's worth it to preserve the consistency and functionality of your program as a whole.
 
 More about BEM: https://css-tricks.com/bem-101/
+ 
+ ## Mini-Assignment
+ 
+ We're going to be creating an About page for our website. The routes are all currently set up, and the About page can be accessed using the "about" link in the NavBar. You job is to build out the About page and all of its necessary components! Your final product should look similar to this:
+ 
+ 

@@ -1,3 +1,49 @@
 .modal {
-    
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal--no-display{
+    display: none;
+}
+
+.modal__user-interaction{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    max-width: 90vw;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 30px 370px;
+    grid-template-columns: 500px;
+}
+
+.modal__user-interaction h1{
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.modal__user-interaction button{
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: right;
+    width: 20px;
+    border: none;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-right: 5px;
 }

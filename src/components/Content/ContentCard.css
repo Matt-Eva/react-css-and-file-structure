@@ -7,6 +7,7 @@
     margin: 10px;
     color: black;
     transition: 500ms;
+    border-radius: 2px;
 }
 
 .content-card:hover{

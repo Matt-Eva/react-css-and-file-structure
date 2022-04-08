@@ -22,7 +22,7 @@ function Home() {
   return (
     <div className="home">
       <HiddenSidebar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
-      {showModal ? <Modal /> : null}
+      <Modal showModal={showModal} toggleModal={toggleModal}/>
       <Header toggleSidebar={toggleSidebar} toggleModal={toggleModal}/>
       <Sidebar />
       <ContentBox />

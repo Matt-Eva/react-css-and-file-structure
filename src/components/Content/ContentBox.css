@@ -11,7 +11,7 @@
     overflow: auto;
 }
 
-@media (min-width: 600px){
+@media (min-width: 620px){
     .content-box {
         grid-column: 2 / span 1;
     }

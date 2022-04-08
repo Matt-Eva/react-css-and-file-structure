@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ToggleSidebar.css"
 
-function ToggleSidebar({toggleSidebar}) {
+function ToggleSidebar(/*{toggleSidebar}*/) {
   return (
-    <div className="toggle-sidebar" onClick={() => toggleSidebar()}>
+    <div className="toggle-sidebar" /*onClick={() => toggleSidebar()}*/>
         <div className="toggle-sidebar__line"></div>
         <div className="toggle-sidebar__line"></div>
         <div className="toggle-sidebar__line"></div>

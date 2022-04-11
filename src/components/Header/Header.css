@@ -22,7 +22,7 @@
     margin: 0;
 }
 
-.header a{
+.header__link{
     text-decoration: none;
     align-self: end;
     padding-bottom: 8px;

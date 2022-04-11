@@ -1,8 +1,15 @@
 import React from 'react'
+import "./ValueCard.css"
 
-function ValueCard() {
+function ValueCard({value}) {
+    const {title, img, desc} = value
+
   return (
-    <div>ValueCard</div>
+    <div className="value-card">
+      <h2>{title}</h2>
+      <img src={img} alt={title}/>
+      <p>{desc}</p>
+    </div>
   )
 }
 

@@ -6,7 +6,7 @@ function MissionStatement() {
     console.log(mission)
   return (
     <div className="mission-statement">
-      <p>{mission}</p>
+      <p className="mission-statement__statement">{mission}</p>
     </div>
   )
 }

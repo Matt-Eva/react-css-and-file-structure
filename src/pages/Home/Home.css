@@ -1,5 +1,12 @@
 .home {
     display: grid;
     grid-template-rows: 50px calc(100vh - 50px);
+    
+}
+
+.home__main {
+    grid-row: 2;
+
+    display: grid;
     grid-template-columns: 200px calc(100vw - 200px);
 }

@@ -6,8 +6,8 @@ function ValueCard({value}) {
 
   return (
     <div className="value-card">
+      <img src={img} alt={title} className="value-card__img"/>
       <h2>{title}</h2>
-      <img src={img} alt={title}/>
       <p>{desc}</p>
     </div>
   )

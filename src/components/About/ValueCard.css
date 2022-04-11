@@ -1,0 +1,9 @@
+.value-card{
+    width: 500px;
+    display: grid;
+    grid-template-rows: 100px 30px 100px;
+}
+
+.value-card__img{
+    grid-row: 1;
+}

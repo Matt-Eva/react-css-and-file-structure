@@ -14,8 +14,10 @@ function Home(/*{showModal, toggleModal, showSidebar, toggleSidebar}*/) {
       {/* <HiddenSidebar toggleSidebar={toggleSidebar} showSidebar={showSidebar} /> */}
       <Modal /*showModal={showModal} toggleModal={toggleModal}*//>
       <Header /*toggleSidebar={toggleSidebar} toggleModal={toggleModal}*//>
-      <Sidebar />
-      <ContentBox />
+      <div className="home__main">
+        <Sidebar />
+        <ContentBox />
+      </div>
     </div>
   )
 }

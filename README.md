@@ -67,7 +67,7 @@ More about BEM: https://css-tricks.com/bem-101/
  
  ## Mini-Assignment
  
- We're going to be creating an About page for our website. The routes are all currently set up, and the About page can be accessed using the "about" link in the NavBar. You job is to build out the About page and all of its necessary components! Your final product should look similar to this:
+ We're going to be creating an About page for our website. The routes are all currently set up, and the About page can be accessed using the "about" link in the NavBar. Your job is to build out the About page and all of its necessary components! Your final product should look similar to this:
  
  When screen size is below 700px (user should be able to scroll through values while still seeing the header and mission statement): 
  

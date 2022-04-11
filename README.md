@@ -69,11 +69,11 @@ More about BEM: https://css-tricks.com/bem-101/
  
  We're going to be creating an About page for our website. The routes are all currently set up, and the About page can be accessed using the "about" link in the NavBar. You job is to build out the About page and all of its necessary components! Your final product should look similar to this:
  
- When screen size is below 700px: 
+ When screen size is below 700px (user should be able to scroll through values while still seeing the header and mission statement): 
  
  <img width="499" alt="Screen Shot 2022-04-11 at 11 48 51 AM" src="https://user-images.githubusercontent.com/89106805/162809138-acdc1cc2-cb48-4d35-8d4c-badc8a8290fc.png">
 
- When screen size is above 700px:
+ When screen size is above 700px (user should be able to scroll through values while still seeing the header and mission statement):
  
  <img width="1146" alt="Screen Shot 2022-04-11 at 11 49 32 AM" src="https://user-images.githubusercontent.com/89106805/162809207-2c014ef5-0734-4751-bf8d-a46e8f7602e7.png">
 

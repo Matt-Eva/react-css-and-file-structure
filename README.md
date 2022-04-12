@@ -91,7 +91,29 @@ This assignment doesn't require use of state or props, although you will have to
      <li>We'll be including our Header in our new page view.</li>
      <li>We need to display our mission statement.</li>
      <li>We need to create cards displaying each of our company values along with their corresponding images and descriptions. We'll want to be able to scroll through these cards while our mission statement and our header remain static on our page.</li>
+     <li>(Hint: I made three new components to handle these different needs)</li>
     </ul>
+  </li>
+  <li>Now it's time to give our new page view some styling attributes. What styles should we give our parent component?
+   <ul>
+    <li>What type of file will we need to create to set styles for our page? What do we need to do to make sure those styles actually apply to our page? How should we select our different JSX elements in order to apply styles to them? (Hint: remember BEM.)</li>
+    <li>Our page is going to need some structure. What CSS styling attribute will it need to give its display a good structure?</li>
+   </ul>
+  </li>
+  <li>Now that we've given our page a basic structure, we need to make sure our different components fit into their appropriate spot inside of our page structure. How will we tell them to do that?
+  </li>
+  <li>Now that you've given everything its appropriate place on the page, it's time to start styling our specific components. Let's take a look at our Mission Statement.
+   <ul>
+   <li>We'll want our Mission Statement to have a distinct background color.</li>
+   <li>We'll need to create an element to display the text of our mission statement. We want that element to be centered vertically and horizontally within our component.</li>
+    <li>We also want to make sure the text is centered within the element we're using to display our mission statement.</li>
+   </ul>
+  </li>
+  <li>Now let's move onto our component we're using to hold our cards.
+   <ul>
+    <li>
+   </ul>
+  </li>
   </li>
  </ol>
 

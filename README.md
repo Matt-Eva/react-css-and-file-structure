@@ -120,6 +120,10 @@ This assignment doesn't require use of state or props, although you will have to
   </li>
   <li>Finally, it's time to style our cards. Let start by designing for the small view (remember: Mobile First).
    <ul>
+    <li>We want our card to be 90% of the width of the viewport.</li>
+    <li>We want different JSX elements to stack on top of each other. We also want our card to be able to flex in order to accomodate for longer or shorter value statements. What styling attributes can we give our card to help ensure both of these happen?</li>
+    <li>We want each card to have a border.</li>
+    <li>We want each card to have a padding of 10 pixels, and to be separated vertically from other cards by 10 pixels.</li>
    </ul>
   </li>
  

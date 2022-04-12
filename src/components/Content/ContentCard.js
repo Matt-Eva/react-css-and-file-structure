@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button"
 function ContentCard(props) {
 
   const isBlue = props.isBlue ? "content-card--blue" : "";
+  
   return (
     <div className={`content-card ${isBlue}`}>
       <h2 className="content-card__header"> Header</h2>

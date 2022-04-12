@@ -35,7 +35,7 @@ Notice that parent components are not always worthy of being treated as "pages".
 
 ### Including CSS Files
 
-There are a few different convetions for including CSS files in your React application. In this example, I've placed CSS files alongside their respective components and pages in a combined folder. Another common convention is to place CSS files in a separate folder from components and pages - often called "styles" or "assets". Both are perfectly acceptable, and may be more suitable for certain types or sizes of applications. I prefer using this method, as I feel it's easier to quickly locate and edit CSS for a particular page or component.
+There are a few different convetions for including CSS files in your React application. In this example, I've placed CSS files alongside their respective components and pages in a combined folder. Another common convention is to place CSS files in a separate folder from components and pages - often called "styles" or "assets". Both are perfectly acceptable, and may be more suitable for certain types or sizes of applications. I prefer using the method demonstrated in this example, as I feel it's easier to quickly locate and edit CSS for a particular page or component.
 
 ## Using CSS in React
 

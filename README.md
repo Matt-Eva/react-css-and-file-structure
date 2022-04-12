@@ -143,4 +143,6 @@ This assignment doesn't require use of state or props, although you will have to
  
  If you've managed to get through all of these deliverables, your app should be looking very similar to the photos above. Feel free to continue to play around with it and make it look better!
 
+ ### Extra Bonus
  
+ There's some code commented out in the original components of this application. Uncommenting them will get the sidebar toggle (visible on small screens) and the "toggle modal" button working. However, our About section we just created will need new code as well. Can you get it working?

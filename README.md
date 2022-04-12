@@ -92,8 +92,10 @@ This assignment doesn't require use of state or props, although you will have to
      <li>We need to display our mission statement.</li>
      <li>We need to create cards displaying each of our company values along with their corresponding images and descriptions. We'll want to be able to scroll through these cards while our mission statement and our header remain static on our page.</li>
      <li>(Hint: I made three new components to handle these different needs)</li>
+     <li>Once we've created these components, we'll need to make sure we're including them in our new page view.</li>
     </ul>
   </li>
+  <li>Great! We want viewers to be able to visit this page when they visit the /about route in our application. Let's look at our App component - what code do we need to comment back in? What do we need to add to our App component?</li>
   <li>Now it's time to give our new page view some styling attributes. What styles should we give our parent component?
    <ul>
     <li>What type of file will we need to create to set styles for our page? What do we need to do to make sure those styles actually apply to our page? How should we select our different JSX elements in order to apply styles to them? (Hint: remember BEM.)</li>

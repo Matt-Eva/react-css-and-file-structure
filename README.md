@@ -124,9 +124,23 @@ This assignment doesn't require use of state or props, although you will have to
     <li>We want different JSX elements to stack on top of each other. We also want our card to be able to flex in order to accomodate for longer or shorter value statements. What styling attributes can we give our card to help ensure both of these happen?</li>
     <li>We want each card to have a border.</li>
     <li>We want each card to have a padding of 10 pixels, and to be separated vertically from other cards by 10 pixels.</li>
+    <li>We want each image to be 200px tall and as wide as the card itself (not including padding).</li>
+     <li>We also want to make sure our images are cropped instead of distorted. We can do this using the "object-fit" property and setting it to "cover".</li>
+    <li>Finally, we want to give our images a border that is only 1 pixel wide</li>
    </ul>
   </li>
- 
+  <li>Now that we've set our default small screen styles, we want to start working on styles for our big screen (over 700px)
+   <ul>
+    <li>What are we going to need to wrap these new styles inside of?</li>
+    <li>We now want our picture to sit next to our value title and our value description, which stack on top of each other. What kind of display attribute would make this type of thing easy to do?</li>
+    <li>We'll probably need to give our image, title, and description new style directions to tell them what part of the layout they belong to.</li>
+    <li>We want our cards to not exceed more than 1000px (in case they're appearing on really large screens).</li>
+    <li>We want our images to be 200px tall and be 100% the width of they're portion of the card.</li>
+   </ul>
+  </li>
+  </li>
  </ol>
+ 
+ If you've managed to get through all of these deliverables, your app should be looking very similar to the photos above. Feel free to continue to play around with it and make it look better!
 
  

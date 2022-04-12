@@ -77,4 +77,19 @@ More about BEM: https://css-tricks.com/bem-101/
  
  <img width="1146" alt="Screen Shot 2022-04-11 at 11 49 32 AM" src="https://user-images.githubusercontent.com/89106805/162809207-2c014ef5-0734-4751-bf8d-a46e8f7602e7.png">
 
+ ### Deliverables
+ 
+We'll be using the values and mission from our "assets" folder - they're already being exported, so you'll just need to import them into the right components.
+ 
+This assignment doesn't require use of state or props, although you will have to set up, design, and implement your own components. You can follow these steps to give you process a little more structure:
+ 
+ <ol>
+   <li> We'll be creating a new page view. What should we call the parent component for our new page view? Where should we put it within our file structure?
+  </li>
+    <ul>
+      <li>Furthermore, </li>
+    </ul>
+  
+ </ol>
+
  

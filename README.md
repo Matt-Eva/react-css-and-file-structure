@@ -86,10 +86,13 @@ This assignment doesn't require use of state or props, although you will have to
  <ol>
    <li> We'll be creating a new page view. What should we call the parent component for our new page view? Where should we put it within our file structure?
   </li>
+  <li> Now that we've created our most parent component, let's think about what other components we need to make / include.
     <ul>
-      <li>Furthermore, </li>
+     <li>We'll be including our Header in our new page view.</li>
+     <li>We need to display our mission statement.</li>
+     <li>We need to create cards displaying each of our company values along with their corresponding images and descriptions. We'll want to be able to scroll through these cards while our mission statement and our header remain static on our page.</li>
     </ul>
-  
+  </li>
  </ol>
 
  

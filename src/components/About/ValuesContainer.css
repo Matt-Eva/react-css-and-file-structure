@@ -2,9 +2,6 @@
     grid-row: 3;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: center;
     overflow: auto;
-    width: 100vw;
-    padding: 10px;
 }

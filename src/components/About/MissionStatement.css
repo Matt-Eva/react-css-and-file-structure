@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    padding: 20px;
+    padding-top: 10px;
     background-color: hsl(60, 10%, 90%)
 }
 

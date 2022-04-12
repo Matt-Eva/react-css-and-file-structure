@@ -113,10 +113,16 @@ This assignment doesn't require use of state or props, although you will have to
   </li>
   <li>Now let's move onto our component we're using to hold our cards.
    <ul>
-    <li>
+    <li>We want our cards to display one after another, vertically. What display attribute can we give our container to ensure this happens?</li>
+    <li>We also want to make sure our cards are centered horizontally on our screen. What styling attribute can we use to ensure that they stay centered?</li>
+    <li>We don't want our cards to overflow our container - instead, we want to scroll down within our contain to view unseen cards. What styling attribute can we use to ensure that happens?</li>
    </ul>
   </li>
+  <li>Finally, it's time to style our cards. Let start by designing for the small view (remember: Mobile First).
+   <ul>
+   </ul>
   </li>
+ 
  </ol>
 
  

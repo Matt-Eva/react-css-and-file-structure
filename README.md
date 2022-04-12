@@ -145,4 +145,4 @@ This assignment doesn't require use of state or props, although you will have to
 
  ### Extra Bonus
  
- There's some code commented out in the original components of this application. Uncommenting them will get the sidebar toggle (visible on small screens) and the "toggle modal" button working. However, our About section we just created will need new code as well. Can you get it working?
+ There's some code commented out in the original components of this application. Uncommenting them will get the sidebar toggle (visible on small screens) and the "toggle modal" button working. (You will also need to comment out our Home component in App that isn't receiving any props). However, our About section we just created will need new code as well. Can you get it working?

@@ -1,0 +1,1 @@
+export const mission = "Our mission is to make super awesome products and deliver incredible services that will make you say 'Whoa, this is so awesome'."

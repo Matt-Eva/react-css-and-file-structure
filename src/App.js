@@ -2,6 +2,7 @@ import {useState} from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <Route exact path="/" element={<Home />}/>
       
       {/* <Route exact path="/" element={<Home showModal={showModal} showSidebar={showSidebar} toggleModal={toggleModal} toggleSidebar={toggleSidebar}/>}/> */}
-      {/* <Route path="/about" element={}/> */}
+      <Route path="/about" element={<About />}/>
     </Routes>
   );
 }

@@ -4,7 +4,7 @@
 
 @media (min-width: 620px){
    .sidebar {
-    grid-column: 1 / span 1;
+    grid-column: 1;
     background-color: hsl(90, 50%, 80%);
     display: block;
     padding: 5px;

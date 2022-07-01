@@ -2,7 +2,6 @@ import {useState} from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Home from './pages/Home/Home';
-import About from './pages/About/About';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {

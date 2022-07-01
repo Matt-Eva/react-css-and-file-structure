@@ -1,4 +1,0 @@
-.about {
-    display: grid;
-    grid-template-rows: 50px 100px calc(100vh - 150px);
-}

@@ -20,10 +20,9 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path="/" element={<Home />}/>
+      <Route exact path="/" element={<Home /*showModal={showModal} showSidebar={showSidebar} toggleModal={toggleModal} toggleSidebar={toggleSidebar}*//>}/>
       
-      {/* <Route exact path="/" element={<Home showModal={showModal} showSidebar={showSidebar} toggleModal={toggleModal} toggleSidebar={toggleSidebar}/>}/> */}
-      <Route path="/about" element={<About />}/>
+      {/* <Route path="/about" element={}/> */}
     </Routes>
   );
 }

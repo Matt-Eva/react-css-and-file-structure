@@ -3,16 +3,19 @@
     grid-column: 1;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    row-gap: 6px;
+    align-content: center;
     justify-content: center;
     width: 52px;
-    height: 30px;
+    height: 29px;
     cursor: pointer;
 }
 
 .toggle-sidebar__line {
+    /* margin: 0; */
+    /* padding: 0; */
     height: 0px;
-    width: 32px;
+    width: 30px;
     background-color: black;
     border: solid;
     border-radius: 2px;

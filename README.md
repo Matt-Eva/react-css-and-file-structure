@@ -50,7 +50,9 @@ When using plain CSS in React, the general convention is to create a separate CS
 The rules of CSS specificity and hierarchy still apply. That means that the styles of parent compenents will have a role in determining the styles of child components. This is great news, especially if you're trying to implement a grid or flexbox in a parent component to to control the layout of child components, but it does mean you're going to need to keep track of styling effects across multiple files. This is really not so bad, especially when the alternative involves endless back and forth scrolling, but it's something to keep in mind if you're getting weird behavior when adjusting the styles for a specific component (maybe its parent element has specific styles that you've forgotten about).
  
  ### The BEM Technique
- 
+
+**UPDATE**: You don't need to use this technique if you use CSS modules. That means creating a file name like `my-file.module.css`. You can include this file adjacent to your component file, as we discussed earlier. That will automatically make any classes within that file unique throughout your application. This is a preferred technique for React applications, as it doesn't require long classnames like BEM, or developer adherence to a rule (most errors are caused by humans).
+
 Typically, we'll want to use classes to select our specific elements within React, rather than ids. Why? Well, let's imagine that we're rendering the same component multiple times within a page. If we set Ids on any of our elements within that component, our DOM would have multiple elements with the same Id, which is a problem - Ids are designed to be unique.
  
 So, instead, React developers will often opt for using classnames as selectors. That way, multiple component renders won't cause any issues. However, this presents another problem. Classnames can be used across elements - that's why we're opting to use them instead of Ids. But what if we accidentally use the same classname twice within our app, on two entirely different components? That could cause some major problems.

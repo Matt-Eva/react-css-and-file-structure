@@ -49,25 +49,23 @@ When using plain CSS in React, the general convention is to create a separate CS
  
 The rules of CSS specificity and hierarchy still apply. That means that the styles of parent compenents will have a role in determining the styles of child components. This is great news, especially if you're trying to implement a grid or flexbox in a parent component to to control the layout of child components, but it does mean you're going to need to keep track of styling effects across multiple files. This is really not so bad, especially when the alternative involves endless back and forth scrolling, but it's something to keep in mind if you're getting weird behavior when adjusting the styles for a specific component (maybe its parent element has specific styles that you've forgotten about).
  
- ### The BEM Technique
+ ### CSS Modules
 
-**UPDATE**: You don't need to use this technique if you use CSS modules. That means creating a file name like `my-file.module.css`. You can include this file adjacent to your component file, as we discussed earlier. That will automatically make any classes within that file unique throughout your application. This is a preferred technique for React applications, as it doesn't require long classnames like BEM, or developer adherence to a rule (most errors are caused by humans).
+As developers, we typically like to style things using class names. That way, if we need to extend a set of styles to multiple components, we can easily just include the class name we want to use. They're more flexible than IDs, but can still be used to style just a single element if need be.
 
-Typically, we'll want to use classes to select our specific elements within React, rather than ids. Why? Well, let's imagine that we're rendering the same component multiple times within a page. If we set Ids on any of our elements within that component, our DOM would have multiple elements with the same Id, which is a problem - Ids are designed to be unique.
- 
-So, instead, React developers will often opt for using classnames as selectors. That way, multiple component renders won't cause any issues. However, this presents another problem. Classnames can be used across elements - that's why we're opting to use them instead of Ids. But what if we accidentally use the same classname twice within our app, on two entirely different components? That could cause some major problems.
+The problem is, we'll be working in a lot of CSS files in a React application (or a lot of CSS at the very least). What if we accidentally use the same classname twice in our application?
 
-This is where the BEM technique comes into play. BEM stands for "Block, Element, Modifier", and refers to a specific method for naming classes. The "Block" level refers to the parent element you're exporting from your component (most likely a div). Since React components can only return one JSX element (along with whatever child elements you've defined inside of it), we'll be placing our "Block" classname on that single parent element. Furthermore, since all components should have unique names, the classname for that parent element will simply be the name of the component itself. For example, the Block level element in our component ContentCard will be given a classname of `content-card`. Since no other components will have the same name as ContentCard, and all Block level classnames will have the same name as the component they're being created in, this ensures that each Block level classname will be unique.
+This is where CSS Module files come in. Instead of just name a file with the regular `.css` extension, we'll create a file using the `module.css` extension: `my-file.module.css`. You can include this file adjacent to your component file, as we discussed earlier. That will automatically make any classes within that file unique throughout your application. 
 
-Next, we have our "Element" level. This refers to the child elements of our block level element. For example, our ContentCard has an h2 element inside of its block level div element. Let's say we want to give this h2 header a simple classname of `header`. Giving it the classname `header` wouldn't work, as we probably have many headers throughout our application, and we could end up with duplicate classnames, which would cause problems. So, we're going to preface `header` with our Block level classname followed by two underscores. Aka, the classname for our h2 header will be `content-card__header`.
+The main difference is how we access these files. Instead of just writing `import './myStyles.css'` at the top of our component, we'll run `import styles from './myStyles.css'`.
 
-Because our block level classname will be unique, prefacing the classnames of all of its child elements with the block level classname will ensure that each of the child elements have a unique classname. That way we can use more generic labels to describe them (such as `header`) without running the risk of duplicating classnames across our application. Pretty smart!
+Then, when we want to assign a className, we'll use `styles.className` notation:
 
-But what if we want to conditionally modify our Block level element or specific child level elements? That's where the "Modifier" technique comes in. Basically, you use the classname of whichever element whose styles you want to modify - "content-card", perhaps, or `content-card__header` - and append `--<modifier-descriptor>`. (<modifier-descriptor> is a stand in for whatever descriptor you want to use to describe how your modifying your class). So, if we wanted to give our content-card class a blue background, we could make a class called `content-card--blue`. And if we wanted to change the font of our header class, we could write `content-card__header--new-font`.
- 
-The downside of the BEM technique is that you can end up with some pretty long classnames. But, it's worth it to preserve the consistency and functionality of your program as a whole.
+```jsx
+<p style={styles.myClass}
+```
 
-More about BEM: https://css-tricks.com/bem-101/
+And Voila! Unique classnames for every CSS file!
  
  ## Mini-Assignment
  
